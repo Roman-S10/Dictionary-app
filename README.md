@@ -1,5 +1,8 @@
 # Dictionary-app
 
-Make sure that you have installed ui5 cli (npm install --global @ui5/cli)
+Make sure that you have installed node js and ui5 cli (npm install --global @ui5/cli).
 
-To start progict run "npm run dev"
+To start progict:
+
+1 Run npm install.
+2 run "npm run dev".
