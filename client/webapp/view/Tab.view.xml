@@ -1,0 +1,36 @@
+<mvc:View 
+controllerName="sap.ui.client.controller.Tab"
+xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<IconTabBar
+		id="idIconTabBarNoIcons"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter text="Add Translation" key="addTranslation">
+                <Label text="Enter Word" labelFor="input-word" />
+                <Input
+                    id="input-word" 
+                    valueLiveUpdate="true"/>
+                <Label text="Enter Translation" labelFor="input-translation" />
+		        <Input id="input-translation"/>
+				<Button
+                    text="Add"
+                    press=".onAddTranslation"
+                    class="myCustomButton"/>
+			</IconTabFilter>
+			<IconTabFilter text="Get Translation" key="getTranslation">
+                <Label text="Enter Word" labelFor="input-word" />
+                <Input
+                    id="input-word-for-translation"
+                    valueLiveUpdate="true" />
+                <FormattedText
+                    htmlText="Translation: "
+                    class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+                <Button
+                    text="Get Translation"
+                    press=".onGetTranslation"
+                    class="myCustomButton"/>
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+</mvc:View>
