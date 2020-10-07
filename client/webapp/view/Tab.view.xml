@@ -13,6 +13,10 @@ xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
                     valueLiveUpdate="true"/>
                 <Label text="Enter Translation" labelFor="input-translation" />
 		        <Input id="input-translation"/>
+                <FormattedText
+                    id="info-text"
+                    htmlText=""
+                    class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
 				<Button
                     text="Add"
                     press=".onAddTranslation"
@@ -24,7 +28,7 @@ xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
                     id="input-word-for-translation"
                     valueLiveUpdate="true" />
                 <FormattedText
-                    htmlText="Translation: "
+                    id="translation-text"
                     class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
                 <Button
                     text="Get Translation"
